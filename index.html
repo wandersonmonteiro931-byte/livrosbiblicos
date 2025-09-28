@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35 Livros Cristãos para Colorir - Mais de 600 Páginas | Livros Bíblicos</title>
+    <script>
+        // GitHub Pages base path detection
+        (function() {
+            var hostname = window.location.hostname;
+            var pathname = window.location.pathname;
+            if (hostname.includes('github.io')) {
+                var pathParts = pathname.split('/').filter(function(part) { return part; });
+                if (pathParts.length > 0 && !pathname.endsWith('.html')) {
+                    var basePath = '/' + pathParts[0];
+                    var base = document.createElement('base');
+                    base.href = window.location.origin + basePath + '/';
+                    document.head.appendChild(base);
+                }
+            }
+        })();
+    </script>
+    <meta name="description" content="Baixe agora 35 livros cristãos para colorir com mais de 600 páginas de histórias bíblicas. Diversão educativa para toda a família. Impressão ilimitada, acesso vitalício e garantia de 7 dias.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://livrosbiblicos.com/">
+    <meta property="og:title" content="35 Livros Cristãos para Colorir - Mais de 600 Páginas">
+    <meta property="og:description" content="Mais de 600 páginas de histórias bíblicas para colorir. Diversão educativa para toda a família!">
+    <meta property="og:image" content="./images/hero-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://livrosbiblicos.com/">
+    <meta property="twitter:title" content="35 Livros Cristãos para Colorir - Mais de 600 Páginas">
+    <meta property="twitter:description" content="Mais de 600 páginas de histórias bíblicas para colorir. Diversão educativa para toda a família!">
+    <meta property="twitter:image" content="./images/hero-image.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header sticky">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i data-lucide="book-open" class="logo-icon"></i>
+                    <span class="logo-text">LIVROS BÍBLICOS</span>
+                </div>
+                <nav class="nav">
+                    <button onclick="scrollToSection('produto')" data-testid="nav-produto">Produto</button>
+                    <button onclick="scrollToSection('precos')" data-testid="nav-precos">Preços</button>
+                    <button onclick="scrollToSection('garantia')" data-testid="nav-garantia">Garantia</button>
+                </nav>
+                <div class="mobile-menu-button" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section gradient-bg">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        35 Livros Cristãos<br />
+                        <span class="accent-text">para Colorir</span>
+                    </h1>
+                    <p class="hero-description">
+                        Mais de 600 páginas de histórias bíblicas para colorir. Diversão educativa para toda a família!
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary pulse-glow" onclick="scrollToSection('precos')" data-testid="button-hero-download">
+                            <i data-lucide="download"></i>
+                            Baixar Agora - R$ 10
+                        </button>
+                        <button class="btn btn-outline" onclick="scrollToSection('exemplos')" data-testid="button-hero-preview">
+                            <i data-lucide="play"></i>
+                            Ver Prévia
+                        </button>
+                    </div>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i data-lucide="infinity"></i>
+                            <span>Impressão Ilimitada</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="shield"></i>
+                            <span>Garantia 7 dias</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <img 
+                        src="./images/hero-image.png"
+                        alt="Livros para colorir cristãos" 
+                        class="hero-image animate-float"
+                    />
+                    <div class="hero-badge">
+                        ⭐ Mais de 600 páginas!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section id="produto" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que você vai receber</h2>
+                <p class="section-description">Uma coleção completa de livros para colorir com as mais belas histórias bíblicas</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon primary">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3 class="feature-title">35 Livros Únicos</h3>
+                    <p class="feature-description">Histórias do Antigo e Novo Testamento cuidadosamente selecionadas</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon accent">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3 class="feature-title">600+ Páginas</h3>
+                    <p class="feature-description">Horas de diversão educativa para crianças de todas as idades</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon primary">
+                        <i data-lucide="printer"></i>
+                    </div>
+                    <h3 class="feature-title">Qualidade Premium</h3>
+                    <p class="feature-description">Adequado para impressão caseira em alta qualidade</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon accent">
+                        <i data-lucide="baby"></i>
+                    </div>
+                    <h3 class="feature-title">Para +3 anos</h3>
+                    <p class="feature-description">Adequado para crianças a partir dos 3 anos de idade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Gallery -->
+    <section id="exemplos" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Veja alguns exemplos</h2>
+                <p class="section-description">Páginas lindamente ilustradas prontas para colorir</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-card hover-scale">
+                    <div class="gallery-image">
+                        <img 
+                            src="./images/arca-noe.png"
+                            alt="Arca de Noé para colorir" 
+                        />
+                    </div>
+                    <h3 class="gallery-title">Arca de Noé</h3>
+                    <p class="gallery-description">História clássica com lindos animais para colorir</p>
+                </div>
+                
+                <div class="gallery-card hover-scale">
+                    <div class="gallery-image">
+                        <img 
+                            src="./images/jesus-criancas.png"
+                            alt="Jesus e as crianças para colorir" 
+                        />
+                    </div>
+                    <h3 class="gallery-title">Jesus e as Crianças</h3>
+                    <p class="gallery-description">Cenas tocantes do Novo Testamento</p>
+                </div>
+                
+                <div class="gallery-card hover-scale">
+                    <div class="gallery-image">
+                        <img 
+                            src="./images/davi-golias.png"
+                            alt="Davi e Golias para colorir" 
+                        />
+                    </div>
+                    <h3 class="gallery-title">Davi e Golias</h3>
+                    <p class="gallery-description">Histórias de coragem e fé do Antigo Testamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precos" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Escolha seu pacote</h2>
+                <p class="section-description">Preços especiais por tempo limitado</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Basic Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Pacote Básico</h3>
+                        <div class="pricing-price">
+                            <span class="old-price">R$ 47</span>
+                            <span class="current-price">R$ 10</span>
+                        </div>
+                        <div class="savings-badge primary">
+                            <i data-lucide="percent"></i>
+                            Economia de 79%
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> 35 livros (mais de 600 páginas)</li>
+                        <li><i data-lucide="check"></i> Impressão ilimitada</li>
+                        <li><i data-lucide="check"></i> Acesso vitalício</li>
+                        <li><i data-lucide="check"></i> Garantia de 7 dias</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary pricing-btn" onclick="handlePurchase('basic')" data-testid="button-basic-package">
+                        <i data-lucide="shopping-cart"></i>
+                        Comprar Agora
+                    </button>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="pricing-card premium pulse-glow-premium">
+                    <div class="premium-badge">
+                        <i data-lucide="crown"></i>
+                        Mais Vendido
+                    </div>
+                    
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Pacote Premium</h3>
+                        <div class="pricing-price">
+                            <span class="old-price">R$ 97</span>
+                            <span class="current-price accent pulse-price">R$ 14,90</span>
+                        </div>
+                        <div class="savings-badge accent">
+                            <i data-lucide="flame"></i>
+                            Economia de 85%
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="accent"></i> <strong>Tudo do Pacote Básico +</strong></li>
+                        <li><i data-lucide="credit-card" class="accent"></i> BÔNUS: CARTÕES BÍBLICOS PARA MEMORIZAÇÃO</li>
+                        <li><i data-lucide="trophy" class="accent"></i> BÔNUS: DESAFIO BÍBLICO DE 7 DIAS</li>
+                        <li><i data-lucide="book-open" class="accent"></i> BÔNUS: LIVRO DE ATIVIDADES CRISTÃ</li>
+                        <li><i data-lucide="calendar" class="accent"></i> BÔNUS: PLANNER DEVOCIONAL INFANTIL</li>
+                    </ul>
+                    
+                    <button class="btn btn-premium pricing-btn pulse-glow" onclick="handlePurchase('premium')" data-testid="button-premium-package">
+                        <i data-lucide="crown"></i>
+                        Escolher Premium
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section id="garantia" class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-card hover-scale">
+                <div class="guarantee-icon">
+                    <i data-lucide="shield"></i>
+                </div>
+                
+                <h2 class="guarantee-title">Garantia de 7 dias sem risco!</h2>
+                
+                <p class="guarantee-description">
+                    Experimente por 7 dias completos. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. 
+                    Sem perguntas, sem complicações.
+                </p>
+                
+                <div class="guarantee-steps">
+                    <div class="guarantee-step">
+                        <i data-lucide="download"></i>
+                        <h4>1. Baixe</h4>
+                        <p>Acesso imediato após a compra</p>
+                    </div>
+                    <div class="guarantee-step">
+                        <i data-lucide="palette"></i>
+                        <h4>2. Teste</h4>
+                        <p>Use por 7 dias sem compromisso</p>
+                    </div>
+                    <div class="guarantee-step">
+                        <span class="emoji">💰</span>
+                        <h4>3. Garanta</h4>
+                        <p>Reembolso total se não gostar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="faq-icon">
+                    <i data-lucide="help-circle"></i>
+                </div>
+                <h2 class="section-title">
+                    Perguntas <span class="primary-text">Frequentes</span>
+                </h2>
+                <p class="section-description">
+                    Encontre respostas rápidas para suas principais dúvidas sobre nossos livros para colorir cristãos
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <!-- FAQ Items Column 1 -->
+                <div class="faq-column">
+                    <div class="faq-item" data-testid="faq-item-digital">
+                        <div class="faq-question" data-testid="faq-trigger-digital">
+                            <div class="faq-question-content">
+                                <i data-lucide="file-text"></i>
+                                <span>O produto é físico ou digital?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-digital">
+                            O produto é 100% digital. Você recebe acesso imediato após a confirmação do pagamento e pode baixar todos os arquivos em alta qualidade para impressão doméstica.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-print">
+                        <div class="faq-question" data-testid="faq-trigger-print">
+                            <div class="faq-question-content">
+                                <i data-lucide="printer"></i>
+                                <span>Posso imprimir quantas vezes quiser?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-print">
+                            Sim! Após a compra, você tem direito à impressão ilimitada e acesso vitalício. Pode imprimir para uso pessoal quantas vezes desejar.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-age">
+                        <div class="faq-question" data-testid="faq-trigger-age">
+                            <div class="faq-question-content">
+                                <i data-lucide="users"></i>
+                                <span>Para que idades são recomendados?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-age">
+                            Os livros foram cuidadosamente desenvolvidos para crianças a partir de 3 anos, mas são perfeitos para toda a família. Desde crianças pequenas até adolescentes e adultos podem se divertir colorindo.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-payment">
+                        <div class="faq-question" data-testid="faq-trigger-payment">
+                            <div class="faq-question-content">
+                                <i data-lucide="credit-card"></i>
+                                <span>Quais formas de pagamento aceitam?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-payment">
+                            Aceitamos todas as formas de pagamento: cartão de crédito, cartão de débito, PIX, boleto bancário e transferência. Pagamento 100% seguro e criptografado.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Items Column 2 -->
+                <div class="faq-column">
+                    <div class="faq-item" data-testid="faq-item-download">
+                        <div class="faq-question" data-testid="faq-trigger-download">
+                            <div class="faq-question-content">
+                                <i data-lucide="clock"></i>
+                                <span>Quando recebo o acesso aos livros?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-download">
+                            O acesso é liberado instantaneamente após a confirmação do pagamento. Você receberá um email com o link para download de todos os 35 livros em poucos minutos.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-quality">
+                        <div class="faq-question" data-testid="faq-trigger-quality">
+                            <div class="faq-question-content">
+                                <i data-lucide="star"></i>
+                                <span>Qual a qualidade dos arquivos?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-quality">
+                            Todos os arquivos são em altíssima resolução (300 DPI) formato PDF, prontos para impressão profissional. Garantimos qualidade superior em qualquer impressora doméstica.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-support">
+                        <div class="faq-question" data-testid="faq-trigger-support">
+                            <div class="faq-question-content">
+                                <i data-lucide="headphones"></i>
+                                <span>E se eu precisar de ajuda?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-support">
+                            Nosso suporte especializado está disponível 24 horas por dia, 7 dias por semana via WhatsApp e email. Garantimos resposta em até 2 horas úteis.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-testid="faq-item-mobile">
+                        <div class="faq-question" data-testid="faq-trigger-mobile">
+                            <div class="faq-question-content">
+                                <i data-lucide="smartphone"></i>
+                                <span>Posso acessar pelo celular?</span>
+                            </div>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </div>
+                        <div class="faq-answer" data-testid="faq-content-mobile">
+                            Sim! Os arquivos podem ser baixados e visualizados em qualquer dispositivo: celular, tablet, computador. Você pode imprimir direto do seu dispositivo favorito.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Support Section -->
+            <div class="faq-contact">
+                <h3 class="faq-contact-title">Ainda tem dúvidas?</h3>
+                <p class="faq-contact-description">Nossa equipe está pronta para ajudar você com qualquer pergunta</p>
+                <div class="faq-contact-buttons">
+                    <button class="btn btn-primary hover-scale">
+                        <i data-lucide="phone"></i>
+                        Falar no WhatsApp
+                    </button>
+                    <button class="btn btn-outline hover-scale">
+                        <i data-lucide="mail"></i>
+                        Enviar Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section gradient-bg">
+        <div class="container">
+            <h2 class="cta-title">
+                Baixe agora e comece a colorir as<br />
+                <span class="accent-text">histórias bíblicas hoje mesmo!</span>
+            </h2>
+            
+            <p class="cta-description">
+                Não perca esta oportunidade única. Oferta válida por tempo limitado!
+            </p>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-premium pulse-glow" onclick="handlePurchase('premium')" data-testid="button-final-premium">
+                    <i data-lucide="crown"></i>
+                    Pacote Premium - R$ 14,90
+                </button>
+                <button class="btn btn-outline" onclick="handlePurchase('basic')" data-testid="button-final-basic">
+                    <i data-lucide="download"></i>
+                    Pacote Básico - R$ 10
+                </button>
+            </div>
+            
+            <div class="cta-features">
+                <div class="feature-item">
+                    <i data-lucide="lock"></i>
+                    <span>Pagamento Seguro</span>
+                </div>
+                <div class="feature-item">
+                    <i data-lucide="shield"></i>
+                    <span>Garantia 7 dias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i data-lucide="book-open"></i>
+                        <span>LIVROS BÍBLICOS</span>
+                    </div>
+                    <p class="footer-description">
+                        Coleção completa de livros cristãos para colorir com mais de 600 páginas de histórias bíblicas. 
+                        Diversão educativa para toda a família!
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>contato@livrosbiblicos.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>São Paulo, SP - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Links Úteis</h4>
+                    <div class="footer-links">
+                        <button onclick="showModal('privacy')">Política de Privacidade</button>
+                        <button onclick="showModal('terms')">Termos de Uso</button>
+                        <button onclick="showModal('refund')">Política de Reembolso</button>
+                        <button onclick="scrollToSection('garantia')">Garantias</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Livros Bíblicos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Política de Privacidade</h2>
+                <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Sua privacidade é importante para nós. Esta política de privacidade explica como coletamos, usamos e protegemos suas informações.</p>
+                <h3>Informações que Coletamos</h3>
+                <p>Coletamos apenas as informações necessárias para processar sua compra e entregar o produto digital.</p>
+                <h3>Como Usamos suas Informações</h3>
+                <p>Suas informações são usadas exclusivamente para processar pagamentos e entregar os produtos digitais.</p>
+                <h3>Proteção de Dados</h3>
+                <p>Utilizamos medidas de segurança para proteger suas informações pessoais.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Termos de Uso</h2>
+                <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Ao adquirir nossos produtos, você concorda com os seguintes termos:</p>
+                <h3>Licença de Uso</h3>
+                <p>Os livros são licenciados para uso pessoal e familiar. É permitida a impressão ilimitada para uso doméstico.</p>
+                <h3>Restrições</h3>
+                <p>É proibida a revenda, distribuição ou uso comercial dos materiais.</p>
+                <h3>Garantia</h3>
+                <p>Oferecemos garantia de 7 dias para reembolso total se não estiver satisfeito.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Refund Policy Modal -->
+    <div id="refundModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Política de Reembolso</h2>
+                <button class="modal-close" onclick="closeModal('refundModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Oferecemos uma garantia de reembolso de 7 dias.</p>
+                <h3>Como Solicitar Reembolso</h3>
+                <p>Entre em contato conosco dentro de 7 dias da compra através do email ou WhatsApp.</p>
+                <h3>Processamento</h3>
+                <p>Reembolsos são processados em até 5 dias úteis após a solicitação.</p>
+                <h3>Condições</h3>
+                <p>Não fazemos perguntas sobre o motivo do reembolso. Sua satisfação é nossa prioridade.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upsell Modal -->
+    <div id="upsellModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🎉 Oferta Especial!</h2>
+                <button class="modal-close" onclick="closeModal('upsellModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="upsell-content">
+                    <h3>Upgrade para o Pacote Premium por apenas R$ 4,90 a mais!</h3>
+                    <p>Ao invés de R$ 10, pague apenas R$ 14,90 e receba:</p>
+                    
+                    <ul class="upsell-features">
+                        <li>✅ <strong>Tudo do Pacote Básico</strong></li>
+                        <li>🎁 <strong>BÔNUS:</strong> Cartões Bíblicos para Memorização</li>
+                        <li>🎁 <strong>BÔNUS:</strong> Desafio Bíblico de 7 Dias</li>
+                        <li>🎁 <strong>BÔNUS:</strong> Livro de Atividades Cristã</li>
+                        <li>🎁 <strong>BÔNUS:</strong> Planner Devocional Infantil</li>
+                    </ul>
+                    
+                    <div class="upsell-savings">
+                        <p><strong>Valor total dos bônus: R$ 127</strong></p>
+                        <p class="highlight">Você economiza R$ 122,10 com esta oferta!</p>
+                    </div>
+                    
+                    <div class="upsell-buttons">
+                        <button class="btn btn-premium pulse-glow" onclick="handleUpgradeToPremium()">
+                            <i data-lucide="crown"></i>
+                            SIM! Quero o Premium - R$ 14,90
+                        </button>
+                        <button class="btn btn-outline" onclick="handleBasicPurchase()">
+                            Não, continuar com o Básico - R$ 10
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
