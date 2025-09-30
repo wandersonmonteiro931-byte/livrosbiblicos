@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35 Livros Cristãos para Colorir | LIVROS BÍBLICOS</title>
+    <meta name="description" content="Mais de 600 páginas de histórias bíblicas para colorir. Diversão educativa para toda a família! Acesso vitalício, impressão ilimitada e garantia de 7 dias.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: 'hsl(210, 40%, 98%)',
+              foreground: 'hsl(222, 84%, 4.9%)',
+              card: 'hsl(0, 0%, 100%)',
+              primary: 'hsl(217, 91%, 60%)',
+              'primary-foreground': 'hsl(210, 40%, 98%)',
+              accent: 'hsl(43, 74%, 66%)',
+              'accent-foreground': 'hsl(222, 84%, 4.9%)',
+              muted: 'hsl(210, 40%, 96%)',
+              'muted-foreground': 'hsl(215, 16%, 47%)',
+              border: 'hsl(214, 32%, 91%)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-background text-foreground font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-card shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i data-lucide="book-open" class="text-primary" style="width: 28px; height: 28px;"></i>
+                    <span class="font-heading font-bold text-xl text-foreground">LIVROS BÍBLICOS</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <button onclick="scrollToSection('produto')" class="text-muted-foreground hover:text-primary transition-colors" data-testid="nav-produto">
+                        Produto
+                    </button>
+                    <button onclick="scrollToSection('precos')" class="text-muted-foreground hover:text-primary transition-colors" data-testid="nav-precos">
+                        Preços
+                    </button>
+                    <button onclick="scrollToSection('garantia')" class="text-muted-foreground hover:text-primary transition-colors" data-testid="nav-garantia">
+                        Garantia
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-6 leading-tight">
+                        35 Livros Cristãos<br>
+                        <span class="text-accent">para Colorir</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+                        Mais de 600 páginas de histórias bíblicas para colorir. Diversão educativa para toda a família!
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <button onclick="scrollToSection('precos')" class="gold-gradient text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg hover-scale pulse-glow flex items-center justify-center gap-2" data-testid="button-hero-download">
+                            <i data-lucide="download" style="width: 20px; height: 20px;"></i>
+                            Baixar Agora
+                        </button>
+                        <button onclick="scrollToSection('exemplos')" class="bg-card text-foreground px-8 py-4 rounded-lg font-semibold text-lg hover-scale border border-border flex items-center justify-center gap-2" data-testid="button-hero-preview">
+                            <i data-lucide="play" style="width: 20px; height: 20px;"></i>
+                            Ver Prévia
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center justify-center lg:justify-start space-x-8 text-primary-foreground/80">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="infinity" style="width: 20px; height: 20px;"></i>
+                            <span>Impressão Ilimitada</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield" style="width: 20px; height: 20px;"></i>
+                            <span>Garantia 7 dias</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <img src="./images/hero-image.png" alt="Livros para colorir cristãos" class="rounded-2xl shadow-2xl w-full h-auto animate-float group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold transform rotate-12 animate-bounce-slow">
+                        ⭐ Mais de 600 páginas!
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section id="produto" class="py-16 bg-card">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+                    O que você vai receber
+                </h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Uma coleção completa de livros para colorir com as mais belas histórias bíblicas
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                        <i data-lucide="book-open" class="text-primary" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl mb-2">35 Livros Únicos</h3>
+                    <p class="text-muted-foreground">Histórias do Antigo e Novo Testamento cuidadosamente selecionadas</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+                        <i data-lucide="palette" class="text-accent" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl mb-2">600+ Páginas</h3>
+                    <p class="text-muted-foreground">Horas de diversão educativa para crianças de todas as idades</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                        <i data-lucide="printer" class="text-primary" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl mb-2">Qualidade Premium</h3>
+                    <p class="text-muted-foreground">Adequado para impressão caseira em alta qualidade</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+                        <i data-lucide="baby" class="text-accent" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl mb-2">Para +3 anos</h3>
+                    <p class="text-muted-foreground">Adequado para crianças a partir dos 3 anos de idade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Gallery -->
+    <section id="exemplos" class="py-16 bg-muted/30">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+                    Veja alguns exemplos
+                </h2>
+                <p class="text-xl text-muted-foreground">
+                    Páginas lindamente ilustradas prontas para colorir
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-card rounded-lg hover-scale group cursor-pointer hover:shadow-xl transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="./images/arca-noe.png" alt="Arca de Noé para colorir" class="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-500 ease-out">
+                    </div>
+                    <h3 class="font-heading font-semibold text-lg mb-2 group-hover:text-primary transition-colors">Arca de Noé</h3>
+                    <p class="text-muted-foreground">História clássica com lindos animais para colorir</p>
+                </div>
+                
+                <div class="p-6 bg-card rounded-lg hover-scale group cursor-pointer hover:shadow-xl transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="./images/jesus-criancas.png" alt="Jesus e as crianças para colorir" class="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-500 ease-out">
+                    </div>
+                    <h3 class="font-heading font-semibold text-lg mb-2 group-hover:text-primary transition-colors">Jesus e as Crianças</h3>
+                    <p class="text-muted-foreground">Cenas tocantes do Novo Testamento</p>
+                </div>
+                
+                <div class="p-6 bg-card rounded-lg hover-scale group cursor-pointer hover:shadow-xl transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="./images/davi-golias.png" alt="Davi e Golias para colorir" class="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-500 ease-out">
+                    </div>
+                    <h3 class="font-heading font-semibold text-lg mb-2 group-hover:text-primary transition-colors">Davi e Golias</h3>
+                    <p class="text-muted-foreground">Histórias de coragem e fé do Antigo Testamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precos" class="py-16 bg-card">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+                    Escolha seu pacote
+                </h2>
+                <p class="text-xl text-muted-foreground">
+                    Preços especiais por tempo limitado
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Basic Package -->
+                <div class="p-8 bg-card rounded-lg border border-border shadow relative">
+                    <div class="text-center mb-6">
+                        <h3 class="font-heading font-bold text-2xl text-foreground mb-2">Pacote Básico</h3>
+                        <div class="mb-4">
+                            <span class="text-3xl font-bold text-muted-foreground line-through">R$ 47</span>
+                            <span class="text-5xl font-bold text-primary ml-2">R$ 10</span>
+                        </div>
+                        <div class="bg-primary/10 text-primary px-4 py-2 rounded-full inline-flex items-center gap-1">
+                            <i data-lucide="percent" style="width: 16px; height: 16px;"></i>
+                            Economia de 79%
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-primary" style="width: 20px; height: 20px;"></i>
+                            <span>35 livros (mais de 600 páginas)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-primary" style="width: 20px; height: 20px;"></i>
+                            <span>Impressão ilimitada</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-primary" style="width: 20px; height: 20px;"></i>
+                            <span>Acesso vitalício</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-primary" style="width: 20px; height: 20px;"></i>
+                            <span>Garantia de 7 dias</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="handlePurchaseClick('basic')" class="w-full bg-primary text-white py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition flex items-center justify-center gap-2" data-testid="button-basic-package">
+                        <i data-lucide="shopping-cart" style="width: 20px; height: 20px;"></i>
+                        Comprar Agora
+                    </button>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="p-8 bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg border-2 border-accent shadow relative premium-pulse">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-accent text-accent-foreground px-6 py-2 rounded-full font-semibold flex items-center gap-1">
+                            <i data-lucide="crown" style="width: 16px; height: 16px;"></i>
+                            Mais Vendido
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6 mt-4">
+                        <h3 class="font-heading font-bold text-2xl text-foreground mb-2">Pacote Premium</h3>
+                        <div class="mb-4">
+                            <span class="text-3xl font-bold text-muted-foreground line-through">R$ 97</span>
+                            <span class="text-5xl font-bold text-accent ml-2">R$ 14,90</span>
+                        </div>
+                        <div class="bg-accent/20 text-accent px-4 py-2 rounded-full inline-flex items-center gap-1">
+                            <i data-lucide="flame" style="width: 16px; height: 16px;"></i>
+                            Economia de 85%
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-accent" style="width: 20px; height: 20px;"></i>
+                            <span class="font-semibold">Tudo do Pacote Básico +</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="credit-card" class="text-accent" style="width: 20px; height: 20px;"></i>
+                            <span>BÔNUS: CARTÕES BÍBLICOS PARA MEMORIZAÇÃO</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="trophy" class="text-accent" style="width: 20px; height: 20px;"></i>
+                            <span>BÔNUS: DESAFIO BÍBLICO DE 7 DIAS</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="book-open" class="text-accent" style="width: 20px; height: 20px;"></i>
+                            <span>BÔNUS: LIVRO DE ATIVIDADES CRISTÃ</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="calendar" class="text-accent" style="width: 20px; height: 20px;"></i>
+                            <span>BÔNUS: PLANNER DEVOCIONAL INFANTIL</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="handlePurchaseClick('premium')" class="w-full gold-gradient text-accent-foreground py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition flex items-center justify-center gap-2" data-testid="button-premium-package">
+                        <i data-lucide="crown" style="width: 20px; height: 20px;"></i>
+                        Escolher Premium
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section id="garantia" class="py-16 bg-muted/30">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="p-8 md:p-12 bg-card rounded-lg hover-scale shadow">
+                    <div class="bg-primary/10 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="shield" class="text-primary" style="width: 48px; height: 48px;"></i>
+                    </div>
+                    
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+                        Garantia de 7 dias sem risco!
+                    </h2>
+                    
+                    <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
+                        Experimente por 7 dias completos. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. 
+                        Sem perguntas, sem complicações.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <i data-lucide="download" class="text-primary mx-auto mb-3" style="width: 32px; height: 32px;"></i>
+                            <h4 class="font-semibold mb-2">1. Baixe</h4>
+                            <p class="text-muted-foreground text-sm">Acesso imediato após a compra</p>
+                        </div>
+                        <div>
+                            <i data-lucide="palette" class="text-primary mx-auto mb-3" style="width: 32px; height: 32px;"></i>
+                            <h4 class="font-semibold mb-2">2. Teste</h4>
+                            <p class="text-muted-foreground text-sm">Use por 7 dias sem compromisso</p>
+                        </div>
+                        <div>
+                            <span class="text-primary text-2xl mx-auto mb-3 block">💰</span>
+                            <h4 class="font-semibold mb-2">3. Garanta</h4>
+                            <p class="text-muted-foreground text-sm">Reembolso total se não gostar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading font-bold text-4xl md:text-5xl text-primary-foreground mb-6">
+                Baixe agora e comece a colorir as<br>
+                <span class="text-accent">histórias bíblicas hoje mesmo!</span>
+            </h2>
+            
+            <p class="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+                Não perca esta oportunidade única. Oferta válida por tempo limitado!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button onclick="handlePurchaseClick('premium')" class="gold-gradient text-accent-foreground px-12 py-6 rounded-xl font-bold text-xl hover-scale pulse-glow flex items-center justify-center gap-2" data-testid="button-final-premium">
+                    <i data-lucide="crown" style="width: 20px; height: 20px;"></i>
+                    Pacote Premium - R$ 14,90
+                </button>
+                <button onclick="handlePurchaseClick('basic')" class="bg-card text-foreground px-12 py-6 rounded-xl font-bold text-xl hover-scale border-2 border-primary-foreground/20 flex items-center justify-center gap-2" data-testid="button-final-basic">
+                    <i data-lucide="download" style="width: 20px; height: 20px;"></i>
+                    Pacote Básico - R$ 10
+                </button>
+            </div>
+            
+            <div class="flex items-center justify-center space-x-8 text-primary-foreground/80">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="lock" style="width: 20px; height: 20px;"></i>
+                    <span>Pagamento Seguro</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="download" style="width: 20px; height: 20px;"></i>
+                    <span>Acesso Imediato</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="shield" style="width: 20px; height: 20px;"></i>
+                    <span>Garantia 7 dias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-muted border-t">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="book-open" class="text-primary" style="width: 24px; height: 24px;"></i>
+                        <span class="font-heading font-bold text-xl text-foreground">LIVROS BÍBLICOS</span>
+                    </div>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Compartilhando a palavra de Deus através de materiais educativos de qualidade.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg text-foreground mb-4">Contato</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 text-muted-foreground">
+                            <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+                            <span>contato@livrosbiblicos.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-muted-foreground">
+                            <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+                            <span>(62) 99565-7915</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-semibold text-lg text-foreground mb-4">Informações</h4>
+                    <div class="space-y-2">
+                        <button class="block text-muted-foreground hover:text-primary transition-colors text-left" data-testid="button-privacy-policy">
+                            Política de Privacidade
+                        </button>
+                        <button class="block text-muted-foreground hover:text-primary transition-colors text-left" data-testid="button-terms-of-use">
+                            Termos de Uso
+                        </button>
+                        <button class="block text-muted-foreground hover:text-primary transition-colors text-left" data-testid="button-refund-policy">
+                            Reembolso
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-border mt-8 pt-8 text-center">
+                <p class="text-muted-foreground">
+                    &copy; 2025 Livros Bíblicos. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Upsell -->
+    <div id="upsellModal" class="modal">
+        <div class="modal-overlay" onclick="closeUpsellModal()"></div>
+        <div class="modal-content">
+            <h3 class="text-2xl font-bold text-center mb-4">😮 Vai perder mesmo?</h3>
+            <p class="text-center text-muted-foreground mb-4">
+                Que tal levar o <strong>Pacote Premium</strong> por apenas <strong>R$ 4,90 a mais</strong>?
+            </p>
+            <div class="bg-accent/10 p-4 rounded-lg mb-4">
+                <div class="text-sm font-semibold mb-2">✨ Você vai ganhar:</div>
+                <ul class="text-sm space-y-1">
+                    <li>✅ Tudo do Pacote Básico +</li>
+                    <li>✅ BÔNUS: CARTÕES BÍBLICOS PARA MEMORIZAÇÃO</li>
+                    <li>✅ BÔNUS: DESAFIO BÍBLICO DE 7 DIAS</li>
+                    <li>✅ BÔNUS: LIVRO DE ATIVIDADES CRISTÃ</li>
+                    <li>✅ BÔNUS: PLANNER DEVOCIONAL INFANTIL</li>
+                </ul>
+            </div>
+            <div class="text-center mb-4">
+                <span class="text-lg">De <span class="line-through text-muted-foreground">R$ 97,00</span> por apenas <span class="text-primary font-bold">R$ 14,90</span></span>
+            </div>
+            <div class="text-center text-sm mb-6">
+                É só 4,90 a mais pra fazer a alegria da criançada! 😜
+            </div>
+            <div class="space-y-2">
+                <button onclick="handleUpgradeToPremium()" class="w-full gold-gradient text-accent-foreground py-3 rounded-lg font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i data-lucide="crown" style="width: 16px; height: 16px;"></i>
+                    Sim! Quero o Premium
+                </button>
+                <button onclick="handleBasicPurchase()" class="w-full bg-muted text-foreground py-3 rounded-lg font-semibold hover:bg-muted/80 transition">
+                    Continuar com Básico
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title font-semibold"></div>
+            <div class="toast-description text-sm text-muted-foreground"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
